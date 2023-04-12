@@ -1,0 +1,6 @@
+STATUS,CANCELLATION_REASON
+0,"Not Cancelled"
+1,"Carrier Cancellation"
+2,"Weather Cancellation"
+3,"National Air System Cancellation"
+4,"Security Cancellation"

@@ -1,0 +1,4 @@
+STATUS,WEATHER_DESCRIPTION
+0,"No weather events present"
+1,"Weather event(s) present"
+2,"Significant weather event(s) present (Volcanic ash, Thunderstorm, Dust/sandstorm, Tornado, Freezing Precipitation)"
