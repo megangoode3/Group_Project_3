@@ -1,12 +1,16 @@
 import sqlite3
 import csv
 import pandas as pd
+import sqlalchemy
+from sqlalchemy import create_engine
 
-connection = sqlite3.connect('flight.db')
+
+connection = sqlite3.connect('flight_db')
 cursor = connection.cursor()
+engine = create_engine('sqlite:///flight_db', echo=False)
 
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS flight_db (
+    CREATE TABLE flight_db (
         FL_DATE DATE,
         DEP_HOUR INTEGER,
         OP_UNIQUE_CARRIER TEXT,
@@ -20,7 +24,7 @@ cursor.execute('''
         DEP_DELAY INTEGER,
         AIR_TIME INTEGER,
         CANCELLED INTEGER,
-        YEAR_OF_MANUFACTURE TEXT,
+        YEAR_OF_MANUFACTURE INTEGER,
         MANUFACTURER TEXT,
         ICAO_TYPE TEXT,
         ACTIVE_WEATHER INTEGER )
@@ -28,16 +32,8 @@ cursor.execute('''
 
 flight_data = pd.read_csv('UpdatedNewCompleteData.csv')             
 flight_data.to_sql('flight_db', connection, if_exists='append', index=False)
-
 cursor.execute('''
     SELECT * FROM flight_db
 ''')
 print(cursor.fetchall())
-
-flight_df = pd.read_sql('''
-    SELECT * FROM flight_db
-    ''', connection)
-
-print(flight_df.head())
-
 connection.close()
