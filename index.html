@@ -8,33 +8,43 @@
 </head>
 <body>
     <header>
-        <h1>Analysis of Flight Data Between ____</h1>
+        <h1 id="header-text">Analysis of Flight Data Between JFK and </h1>
         <h2>Project 3 - Group 3</h2>
-        
+        <br>
         <h4>Project Members: Megan Goode, Indrani Sarkar, Bruce Ly, Will MacMillan, Bennett Northcutt</h4>
         <br>
         <h5>Project Description: For our Group 3 Project, we've focused on flight data between New York JFK and RDU, DEN, and AUS.</h5>
     </header>
     <main>
+        <select id="dropdown">
+            <!-- Add dropdown options here -->
+            <option value="AUS">AUS</option>
+            <option value="DEN">DEN</option>
+            <option value="RDU">RDU</option>
+          </select>
+          <br>
         <section class="quadrant" id="quadrant1">
             <h2 class="chart-title">Chart Title 1</h2>
             <p class="chart-description">Chart description for quadrant 1.</p>
+            <canvas id="chart1"></canvas>
         </section>
         <section class="quadrant" id="quadrant2">
             <h2 class="chart-title">Chart Title 2</h2>
             <p class="chart-description">Chart description for quadrant 2.</p>
+            <canvas id="chart2"></canvas>
         </section>
         <section class="quadrant" id="quadrant3">
             <h2 class="chart-title">Chart Title 3</h2>
             <p class="chart-description">Chart description for quadrant 3.</p>
+            <canvas id="chart3"></canvas>
         </section>
         <section class="quadrant" id="quadrant4">
             <h2 class="chart-title">Chart Title 4</h2>
             <p class="chart-description">Chart description for quadrant 4.</p>
+            <canvas id="chart4"></canvas>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/chart-config.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
