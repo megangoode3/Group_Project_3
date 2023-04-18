@@ -66,8 +66,5 @@ def flight_data():
     return jsonify(all_flight_data)
 
 
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)

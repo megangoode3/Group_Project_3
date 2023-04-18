@@ -37,3 +37,5 @@ async function fetchData() {
   
   // Initialize the header text with the default selected destination
   updateHeaderText(document.getElementById("dropdown").value);
+
+  
