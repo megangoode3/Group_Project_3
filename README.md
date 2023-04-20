@@ -1,7 +1,16 @@
-# Group_Project_3
+## Group Project 3: Flight Data
+
+# Project Description
 
 For our Group 3 Project, we've focused on flight data between New York JFK and RDU,DEN,and AUS. Our interactive dashboard built using HTML, CSS, and JavaScript supported by a SQL Library and a Flask API features four (4) visualizations displaying various facts about flight data. 
 
+# Website
+
+# Interactive Visualizations
+
+# Charts and Graphs
+
+# Presentation
 
 Our dropdown menu enables the user to select which destination to filter by. 
 
