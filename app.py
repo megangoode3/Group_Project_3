@@ -24,6 +24,7 @@ Flight = Base.classes.flight_db
 # Flask Setup
 #################################################
 app = Flask(__name__)
+CORS(app, resources={r"/api/flights": {"origins": "http://127.0.0.1:5501", "allow_headers": ["Content-Type", "Authorization"]}})
 CORS(app)
 
 @app.route("/")

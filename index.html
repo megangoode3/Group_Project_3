@@ -22,33 +22,25 @@
             <option value="DEN">DEN</option>
             <option value="RDU">RDU</option>
           </select>
-          <br>
-        <section class="quadrant" id="quadrant1">
-            <canvas id="chart1"></canvas>
-            <h2 class="chart-title">Chart Title 1</h2>
-            <p class="chart-description">Chart description for quadrant 1.</p>
-            
-        </section>
-        <section class="quadrant" id="quadrant2">
-            <canvas id="chart2"></canvas>
-            <h2 class="chart-title">Chart Title 2</h2>
-            <p class="chart-description">Chart description for quadrant 2.</p>
-            
-        </section>
-        <section class="quadrant" id="quadrant3">
-            <canvas id="chart3"></canvas>
-            <h2 class="chart-title">Chart Title 3</h2>
-            <p class="chart-description">Chart description for quadrant 3.</p>
-            
-        </section>
-        <section class="quadrant" id="quadrant4">
-            <canvas id="chart4"></canvas>
-            <h2 class="chart-title">Chart Title 4</h2>
-            <p class="chart-description">Chart description for quadrant 4.</p>
-            
-        </section>
+          
+          <div class="chart-container">
+            <h3 class="chart-title">Average Departure Delays by Carrier (Minutes) </h3>
+            <div id="chart1"></div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Air Time by Aircraft Year of Manufacture</h3>
+            <div id="chart2"></div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Aircraft Manufacturer Share of Flights</h3>
+            <div id="chart3"></div>
+          </div>
+          <div class="chart-container">
+            <h3 class="chart-title">Departure Hour and Taxi Out Time</h3>
+            <div id="chart4"></div>
+          </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="/script.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </body>
